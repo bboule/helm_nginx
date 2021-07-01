@@ -2,7 +2,7 @@ Get the NGINX URL:
 
 {{- if .Values.ingress.enabled }}
 
-  You should be able to access your new NGINX installation through:
+  You should be able to access your new NGINX installation through
 
   {{- range .Values.ingress.hosts }}
   {{ if .tls }}https{{ else }}http{{ end }}://{{ .name }}
